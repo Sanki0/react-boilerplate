@@ -64,6 +64,9 @@ module.exports = {
     minimizer: [
       new CssMinimizerPlugin(),
       new TerserPlugin()
-    ]
+    ],
+    splitChunks:{
+      chunks:"all"
+    }
   }
 }
